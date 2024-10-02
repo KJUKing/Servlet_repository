@@ -1,0 +1,25 @@
+package kr.or.ddit;
+
+public class PrintJVMOptionAndArgument {
+    public static void main(String[] args) throws Exception {
+        // args[0] 값 출력
+        if (args.length > 0) {
+            System.out.printf("message : %s\n", args[0]);
+        } else {
+            System.out.println("No argument passed.");
+        }
+
+        // 시스템 프로퍼티에서 값 가져오기
+        String username = System.getProperty("username");
+        System.out.printf("username : %s\n", username);
+        
+        String password = System.getProperty("password");
+        System.out.printf("password : %s\n", password);
+
+        // 1초마다 1부터 20까지 숫자 출력
+        for (int i = 1; i <= 20; i++) {
+            Thread.sleep(1000);
+            System.out.println(i);
+        }
+    }
+}

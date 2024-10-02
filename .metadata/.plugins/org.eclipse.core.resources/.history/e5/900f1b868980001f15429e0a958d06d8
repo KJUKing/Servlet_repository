@@ -1,0 +1,12 @@
+const clientarea = document.getElementById("clientarea");
+
+#serverarea
+const serverarea = document.querySelector("#serverarea");
+
+const controlBtns = document.querySelectorAll(".control");
+
+const watchJob = () => {
+    clientarea.innerHTML = new Date();
+}
+
+setInterval(watchJob, 1000);

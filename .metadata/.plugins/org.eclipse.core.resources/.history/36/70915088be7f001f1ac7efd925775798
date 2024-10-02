@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<pre>
+하드코딩된 텍스트
+<button id="changebtn">다크테마로 변경</button>
+</pre>
+<!-- MIME 텍스트 : 전송 컨텐츠의 종류 표현 -->
+<script type="text/javascript">
+	const btn = document.getElementById();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+package kr.or.ddit;
+
+public class HelloDummy {
+		public static void main(String[] args) throws InterruptedException {
+			System.out.println("hello dummy");
+			for(int i=1; i<=200; i++) {
+				Thread.sleep(1000);
+				System.out.println();
+			
+			}
+		}
+}

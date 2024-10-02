@@ -1,0 +1,42 @@
+const clientarea = document.getElementById("clientarea");
+const serverarea = document.querySelector("#serverarea");
+const controlBtns = document.querySelectorAll(".control");
+
+const watchJob = async () => {
+    clientarea.innerHTML = new Date();
+    let resp = await fetch("../../../now2.do");
+    if (resp.ok) {
+        let jsonObj = await resp.json();
+        serverarea.innerHTML = jsonObj.now;
+    } else {
+        let errMsg = await resp.text();
+        serverarea.innerHTML = errMsg;
+    }
+}
+
+let intervalId = null;
+
+const watchStart = (btn)=> {
+    intervalId = setInterval(watchJob, 1000);
+}
+
+const watchStop = (btn)=>{
+    if (intervalId) {
+        clearInterval(intervalId);
+    }
+}
+
+controlBtns.forEach((btn, index) => {
+    btn.addEventListener("click", ({target}) => {
+        // console.log(event.target === btn);
+        let role = target.dataset.role;
+        controlBtns.forEach(b => b.classList.toggle("d-none"));
+        if (role === "start") {
+            watchStart(target);
+        }else if (role === "stop") {
+            watchStop(target);
+        }
+    });
+});
+
+setInterval(watchJob, 1000);

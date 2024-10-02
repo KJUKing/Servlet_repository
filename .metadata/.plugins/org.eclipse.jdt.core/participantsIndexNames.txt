@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+D:\B_Util\7.Egov\eGovFrameDev-4.2.0-64bit\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2185550494.index
+\DummyWA2\src\main\java
+D:\B_Util\7.Egov\eGovFrameDev-4.2.0-64bit\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3873447025.index
+\WebStudy01\src\main\java
+D:\B_Util\7.Egov\eGovFrameDev-4.2.0-64bit\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1249863917.index
+\DummyWA2\src\main\java
