@@ -1,3 +1,11 @@
 # Project exclude paths
 /out/
 /target/classes/
+
+# IntelliJ IDEA 관련 파일 무시
+.idea/
+*.iml
+*.iws
+
+# Maven 빌드 디렉토리 무시
+target/
